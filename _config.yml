@@ -1,0 +1,149 @@
+# Welcome to Jekyll!
+
+locale: "en-CH"
+
+site_theme: "default"
+title: "Bushra Shahid"
+title_separator: "-"
+name: &name "Bushra Shahid"
+description: &description "Bushra Shahid's academic portfolio"
+
+# IMPORTANT FIX (must match your GitHub repo)
+url: https://b-shahid.github.io
+baseurl: ""
+repository: "b-shahid/b-shahid.github.io"
+
+# Author (sidebar)
+author:
+  avatar: "https://b-shahid.github.io/images/profile.png"
+  name: "Bushra Shahid"
+  pronouns:
+  bio: "evolutionary biologist interested in speciation and hybridization"
+  location: "Zurich, Switzerland"
+  employer: "ETH Zurich"
+  uri:
+  email: # add email if you want it visible
+
+  # Academic profiles
+  academia:
+  arxiv:
+  googlescholar: "https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en"
+  inspire-hep:
+  impactstory:
+  orcid:
+  semantic:
+  ssrn:
+  pubmed:
+  researchgate:
+  scopus:
+  zotero:
+
+  # GitHub + coding
+  bitbucket:
+  codepen:
+  dribbble:
+  github: "b-shahid"
+  kaggle:
+  stackoverflow:
+
+  # Social media
+  bluesky:
+  facebook:
+  flickr:
+  goodreads:
+  instagram:
+  linkedin:
+  mastodon:
+  medium:
+  pinterest:
+  soundcloud:
+  telegram:
+  tumblr:
+  twitter:
+  youtube:
+
+# Publication categories
+publication_category:
+  manuscripts:
+    title: "Journal Articles"
+
+# Site settings
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+
+comments:
+  provider:
+
+atom_feed:
+  hide: false
+
+# SEO
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+
+# Analytics
+analytics:
+  provider: "false"
+
+# Include / exclude
+include:
+  - .htaccess
+  - _pages
+  - files
+
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - README
+
+keep_files:
+  - .git
+
+encoding: "utf-8"
+
+markdown: kramdown
+highlighter: rouge
+
+collections:
+  publications:
+    output: true
+  CV:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji

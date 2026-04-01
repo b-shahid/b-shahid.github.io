@@ -1,0 +1,285 @@
+---
+---
+@import
+    "vendor/breakpoint/breakpoint",
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    "include/mixins",
+    "vendor/susy/susy",
+    "layout/reset",
+    "layout/base",
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+    "layout/forms",
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+
+/* =========================
+   FULL-WIDTH BANNER
+========================= */
+.hero-image {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   FORCE FULL WIDTH LAYOUT
+========================= */
+.page__inner-wrap {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.page {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-right: 0 !important;
+}
+
+.page__content {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.archive {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* hide the empty sidebar completely */
+.sidebar {
+  display: none !important;
+}
+
+/* =========================
+   INTRO LAYOUT
+========================= */
+.intro-container {
+  display: flex !important;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.intro-left {
+  width: 220px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.intro-right {
+  flex: 1;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.links {
+  text-align: left;
+}
+.links a {
+  text-decoration: none;
+}
+
+/* =========================
+   FIX IMAGE DULLNESS
+========================= */
+img {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* =========================
+   HEADER: LEFT NAME + RIGHT NAV
+========================= */
+.masthead__inner-wrap {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.site-title {
+  margin-right: auto;
+}
+
+.greedy-nav {
+  flex: 1;
+  display: flex !important;
+  justify-content: flex-end;
+  margin-left: auto !important;
+  align-items: center;
+}
+
+.greedy-nav .visible-links {
+  display: flex !important;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-end !important;
+  margin-left: auto;
+}
+
+.greedy-nav a {
+  float: none !important;
+}
+
+/* =========================
+   DISABLE HAMBURGER + DROPDOWN
+========================= */
+.greedy-nav .hidden-links-toggle {
+  display: none !important;
+}
+.greedy-nav .hidden-links {
+  display: none !important;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+  }
+  .intro-left {
+    width: 100%;
+  }
+  .greedy-nav .visible-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-end !important;
+  }
+}
+/* =========================
+   FIX ARCHIVE WIDTH - override theme media query
+========================= */
+@media (min-width: 57.8125em) {
+  .archive {
+    width: 100% !important;
+    float: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+/* =========================
+   HIDE HAMBURGER + FIX NAV
+========================= */
+nav.greedy-nav button,
+.greedy-nav > button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: static !important;
+}
+
+.greedy-nav .visible-links {
+  display: flex !important;
+  flex-wrap: nowrap;
+  margin-left: auto !important;
+  justify-content: flex-end !important;
+  gap: 25px;
+  float: none !important;
+}
+
+/* =========================
+   FIX NAV LAYOUT
+========================= */
+.greedy-nav {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+}
+
+.greedy-nav .visible-links {
+  display: flex !important;
+  margin-left: auto !important;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.site-title {
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* =========================
+   FIX MASTHEAD FULL WIDTH
+========================= */
+.masthead__menu {
+  width: 100% !important;
+}
+
+.masthead__inner-wrap {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.greedy-nav {
+  width: 100% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.greedy-nav .site-title {
+  flex-shrink: 0;
+  margin-right: auto !important;
+}
+
+.greedy-nav .visible-links {
+  display: flex !important;
+  margin-left: auto !important;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+  padding: 0 !important;
+}
+
+
+
+
+
