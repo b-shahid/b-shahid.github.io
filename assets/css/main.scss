@@ -195,7 +195,10 @@ nav.greedy-nav button,
    MOBILE FIXES
 ========================= */
 @media (max-width: 768px) {
-  .hero-image img {
+    .intro-left .links {
+    display: block !important;
+  }
+    .hero-image img {
     height: 150px !important;
   }
   .masthead,
