@@ -14,7 +14,7 @@ author_profile: false
     <p class="location">📍 Zurich, Switzerland</p>
     <div class="links">
       <button onclick="document.getElementById('social-links').style.display = document.getElementById('social-links').style.display === 'none' ? 'block' : 'none'" class="follow-btn">Follow</button>
-      <div id="social-links" style="display:none; margin-top:8px;">
+      <div id="social-links" style="margin-top:8px;">
         <a href="https://github.com/b-shahid" target="_blank">GitHub</a><br>
         <a href="https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
         <a href="https://twitter.com/bushrashahid_" target="_blank">Twitter</a><br>
