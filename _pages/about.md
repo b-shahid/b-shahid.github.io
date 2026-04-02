@@ -16,6 +16,7 @@ author_profile: false
       <a href="https://github.com/b-shahid" target="_blank">GitHub</a><br>
       <a href="https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
       <a href="https://twitter.com/bushrashahid_" target="_blank">Twitter</a>
+      <a href="mailto:bushra.shahid@gmail.com">Email</a>
     </p>
   </div>
   <!-- RIGHT COLUMN -->
