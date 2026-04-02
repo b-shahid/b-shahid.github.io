@@ -227,8 +227,6 @@ nav.greedy-nav button,
     margin-left: auto !important;
     justify-content: flex-end !important;
   }
-
-  /* intro: side by side on mobile too */
   .intro-container {
     flex-direction: row !important;
     align-items: flex-start !important;
@@ -248,15 +246,13 @@ nav.greedy-nav button,
     width: 70px !important;
     height: 70px !important;
   }
-
-  /* hide name/location/links on mobile */
   .intro-left h3,
-  .intro-left .location,
-  .intro-left .links {
+  .intro-left .location {
     display: none !important;
   }
-
-  /* show follow button on mobile */
+  #social-links {
+    display: none !important;
+  }
   .follow-btn {
     display: inline-block !important;
     padding: 4px 10px;
@@ -269,13 +265,4 @@ nav.greedy-nav button,
     width: 70px !important;
     text-align: center;
   }
-  #social-links {
-    font-size: 12px;
-    margin-top: 6px;
-    line-height: 1.8;
-  }
-  #social-links {
-    display: none !important;
-  }
- }
 }
