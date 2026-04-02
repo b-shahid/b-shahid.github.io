@@ -244,12 +244,16 @@ nav.greedy-nav button,
     display: flex !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
-    padding: 0 !important;
+    padding: 0 0.5rem !important;
+    gap: 8px !important;
   }
   .site-title {
     font-size: 13px !important;
     white-space: nowrap;
     flex-shrink: 0;
+    margin-right: 12px !important;
+    padding-right: 8px !important;
+    border-right: 1px solid #ccc;
   }
   .greedy-nav .visible-links {
     display: flex !important;
@@ -265,37 +269,26 @@ nav.greedy-nav button,
     gap: 15px !important;
   }
   .intro-left {
-    width: 70px !important;
+    width: 80px !important;
     flex-shrink: 0 !important;
   }
   .profile-pic {
-    width: 60px !important;
-    height: 60px !important;
+    width: 65px !important;
+    height: 65px !important;
   }
   .intro-left h3,
-  .intro-left .location,
-  .intro-left .links {
+  .intro-left .location {
     display: none !important;
+  }
+  .intro-left .links {
+    display: block !important;
+    margin-top: 8px;
+    font-size: 12px;
   }
   .intro-right {
     flex: 1 !important;
   }
-    /* Show links below bio on mobile instead */
-.intro-left h3,
-.intro-left .location {
-  display: none !important;
- }
-
-.intro-left .links {
-  display: block !important;
-  margin-top: 10px;
-  font-size: 12px;
- }
-    .site-title {
-  margin-right: 15px !important;
- }
 }
-
 
 
 
