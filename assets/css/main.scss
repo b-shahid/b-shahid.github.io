@@ -226,6 +226,18 @@ nav.greedy-nav button,
   font-weight: bold;
   margin-right: auto !important;
 }
+.follow-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .follow-btn {
+    display: inline-block !important;
+  }
+  #social-links {
+    display: none;
+  }
+}
 
 /* =========================
    MOBILE FIXES
@@ -296,6 +308,16 @@ nav.greedy-nav button,
   display: block !important;
   margin-top: 8px;
   font-size: 12px;
+ }
+  .follow-btn {
+  display: inline-block !important;
+  padding: 4px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
  }
 }
 
