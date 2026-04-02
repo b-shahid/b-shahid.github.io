@@ -22,7 +22,7 @@ author_profile: false
   <!-- RIGHT COLUMN -->
   <div class="intro-right">
     <p>
-     Hi, I am an evolutionary biologist studying rapid speciation. I’m especially interested in plant systems and their adaptation to novel environments. I am currently a PhD researcher working in the Plant Ecological Genetics Group at ETH Zurich.
+     Hi, I am an evolutionary biologist studying rapid speciation. I’m especially interested in plant systems and their adaptation to novel environments. I am currently a PhD researcher working in the <a href="https://peg.ethz.ch/" target="_blank">Plant Ecological Genetics Group</a> at ETH Zurich.
     </p>
   </div>
 </div>
