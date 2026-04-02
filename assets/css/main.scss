@@ -53,14 +53,12 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-
 .page {
   float: none !important;
   width: 100% !important;
   max-width: 100% !important;
   padding-right: 0 !important;
 }
-
 .page__content {
   float: none !important;
   width: 100% !important;
@@ -68,7 +66,6 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-
 .archive {
   float: none !important;
   width: 100% !important;
@@ -76,8 +73,6 @@
   padding: 0 !important;
   margin-top: 0 !important;
 }
-
-/* hide the empty sidebar completely */
 .sidebar {
   display: none !important;
 }
@@ -93,17 +88,14 @@
   width: 100%;
   box-sizing: border-box;
 }
-
 .intro-left {
   width: 220px;
   flex-shrink: 0;
   text-align: left;
 }
-
 .intro-right {
   flex: 1;
 }
-
 .profile-pic {
   width: 140px;
   height: 140px;
@@ -112,7 +104,6 @@
   display: block;
   margin: 0 0 15px 0;
 }
-
 .links {
   text-align: left;
 }
@@ -137,11 +128,9 @@ img {
   justify-content: space-between !important;
   align-items: center !important;
 }
-
 .site-title {
   margin-right: auto;
 }
-
 .greedy-nav {
   flex: 1;
   display: flex !important;
@@ -149,7 +138,6 @@ img {
   margin-left: auto !important;
   align-items: center;
 }
-
 .greedy-nav .visible-links {
   display: flex !important;
   gap: 25px;
@@ -157,14 +145,9 @@ img {
   justify-content: flex-end !important;
   margin-left: auto;
 }
-
 .greedy-nav a {
   float: none !important;
 }
-
-/* =========================
-   DISABLE HAMBURGER + DROPDOWN
-========================= */
 .greedy-nav .hidden-links-toggle {
   display: none !important;
 }
@@ -173,7 +156,7 @@ img {
 }
 
 /* =========================
-   FIX ARCHIVE WIDTH - override theme media query
+   FIX ARCHIVE WIDTH
 ========================= */
 @media (min-width: 57.8125em) {
   .archive {
@@ -226,17 +209,12 @@ nav.greedy-nav button,
   font-weight: bold;
   margin-right: auto !important;
 }
+
+/* =========================
+   FOLLOW BUTTON - desktop hidden
+========================= */
 .follow-btn {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .follow-btn {
-    display: inline-block !important;
-  }
-  #social-links {
-    display: none;
-  }
 }
 
 /* =========================
@@ -281,8 +259,9 @@ nav.greedy-nav button,
     gap: 15px !important;
   }
   .intro-left {
-    width: 80px !important;
+    width: 100px !important;
     flex-shrink: 0 !important;
+    text-align: left !important;
   }
   .profile-pic {
     width: 65px !important;
@@ -293,33 +272,24 @@ nav.greedy-nav button,
     display: none !important;
   }
   .intro-left .links {
-    display: block !important;
-    margin-top: 8px;
-    font-size: 12px;
+    display: none !important;
   }
   .intro-right {
     flex: 1 !important;
   }
-  .links {
-  display: block !important;
-  }
-
-  .intro-left .links {
-  display: block !important;
-  margin-top: 8px;
-  font-size: 12px;
- }
   .follow-btn {
-  display: inline-block !important;
-  padding: 4px 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: white;
-  font-size: 13px;
-  cursor: pointer;
-  margin-top: 8px;
- }
+    display: inline-block !important;
+    padding: 4px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 65px !important;
+  }
+  #social-links {
+    font-size: 12px;
+    margin-top: 6px;
+  }
 }
-
-
-
