@@ -280,6 +280,20 @@ nav.greedy-nav button,
   .intro-right {
     flex: 1 !important;
   }
+    /* Show links below bio on mobile instead */
+.intro-left h3,
+.intro-left .location {
+  display: none !important;
+ }
+
+.intro-left .links {
+  display: block !important;
+  margin-top: 10px;
+  font-size: 12px;
+ }
+    .site-title {
+  margin-right: 15px !important;
+ }
 }
 
 
