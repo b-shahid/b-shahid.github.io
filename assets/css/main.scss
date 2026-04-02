@@ -173,22 +173,6 @@ img {
 }
 
 /* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-  .intro-container {
-    flex-direction: column;
-  }
-  .intro-left {
-    width: 100%;
-  }
-  .greedy-nav .visible-links {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-end !important;
-  }
-}
-/* =========================
    FIX ARCHIVE WIDTH - override theme media query
 ========================= */
 @media (min-width: 57.8125em) {
@@ -199,9 +183,25 @@ img {
     margin-left: 0 !important;
   }
 }
+
 /* =========================
-   HIDE HAMBURGER + FIX NAV
+   NAV
 ========================= */
+.masthead__menu {
+  width: 100% !important;
+}
+.masthead__inner-wrap {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.greedy-nav {
+  width: 100% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
 nav.greedy-nav button,
 .greedy-nav > button {
   display: none !important;
@@ -210,7 +210,6 @@ nav.greedy-nav button,
   pointer-events: none !important;
   position: static !important;
 }
-
 .greedy-nav .visible-links {
   display: flex !important;
   flex-wrap: nowrap;
@@ -218,97 +217,40 @@ nav.greedy-nav button,
   justify-content: flex-end !important;
   gap: 25px;
   float: none !important;
-}
-
-/* =========================
-   FIX NAV LAYOUT
-========================= */
-.greedy-nav {
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
-  justify-content: space-between !important;
-}
-
-.greedy-nav .visible-links {
-  display: flex !important;
-  margin-left: auto !important;
-  gap: 25px;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-}
-
-.site-title {
-  flex-shrink: 0;
-  font-weight: bold;
-}
-
-/* =========================
-   FIX MASTHEAD FULL WIDTH
-========================= */
-.masthead__menu {
-  width: 100% !important;
-}
-
-.masthead__inner-wrap {
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-.greedy-nav {
-  width: 100% !important;
-  min-width: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-}
-
-.greedy-nav .site-title {
-  flex-shrink: 0;
-  margin-right: auto !important;
-}
-
-.greedy-nav .visible-links {
-  display: flex !important;
-  margin-left: auto !important;
-  gap: 25px;
   align-items: center;
   list-style: none;
   padding: 0 !important;
+}
+.site-title {
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-right: auto !important;
 }
 
 /* =========================
    MOBILE FIXES
 ========================= */
 @media (max-width: 768px) {
-    .hero-image img {
-     height: 150px !important;
+  .hero-image img {
+    height: 150px !important;
   }
-
-  /* White background */
   .masthead,
   body,
   .page__content,
   .archive {
     background-color: white !important;
   }
-
-  /* Header: name left, tabs right in one line */
   .greedy-nav {
     display: flex !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
     padding: 0 !important;
   }
-
   .site-title {
     font-size: 13px !important;
     white-space: nowrap;
     flex-shrink: 0;
   }
-
   .greedy-nav .visible-links {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -317,31 +259,24 @@ nav.greedy-nav button,
     margin-left: auto !important;
     justify-content: flex-end !important;
   }
-
-  /* Stack intro as single column */
   .intro-container {
     flex-direction: row !important;
     align-items: flex-start !important;
     gap: 15px !important;
   }
-
   .intro-left {
     width: 70px !important;
     flex-shrink: 0 !important;
   }
-
   .profile-pic {
     width: 60px !important;
     height: 60px !important;
   }
-
-  /* Hide name/location/links on mobile - show inline instead */
   .intro-left h3,
   .intro-left .location,
   .intro-left .links {
     display: none !important;
   }
-
   .intro-right {
     flex: 1 !important;
   }
