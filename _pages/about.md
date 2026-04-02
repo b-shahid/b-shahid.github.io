@@ -13,7 +13,7 @@ author_profile: false
     <h3>Bushra Shahid</h3>
     <p class="location">📍 Zurich, Switzerland</p>
     <div class="links">
-      <button onclick="document.getElementById('social-links').style.display = document.getElementById('social-links').style.display === 'none' ? 'block' : 'none'" class="follow-btn">Follow</button>
+      <button onclick="var el=document.getElementById('social-links'); el.style.setProperty('display', el.style.display==='block' ? 'none' : 'block', 'important')" class="follow-btn">Follow</button>
       <div id="social-links" style="margin-top:8px;">
         <a href="https://github.com/b-shahid" target="_blank">GitHub</a><br>
         <a href="https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
