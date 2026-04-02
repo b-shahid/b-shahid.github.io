@@ -12,13 +12,15 @@ author_profile: false
     <img class="profile-pic" src="/images/profile.jpg" alt="Profile">
     <h3>Bushra Shahid</h3>
     <p class="location">📍 Zurich, Switzerland</p>
-    <p class="links">
-      <a href="https://github.com/b-shahid" target="_blank">GitHub</a><br>
-      <a href="https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-      <a href="https://twitter.com/bushrashahid_" target="_blank">Twitter</a><br>
-      <a href="mailto:bushra.shahid@gmail.com">Email</a>
-    </p>
-  </div>
+    <div class="links">
+      <button onclick="document.getElementById('social-links').style.display = document.getElementById('social-links').style.display === 'none' ? 'block' : 'none'" class="follow-btn">Follow</button>
+      <div id="social-links" style="display:none; margin-top:8px;">
+        <a href="https://github.com/b-shahid" target="_blank">GitHub</a><br>
+        <a href="https://scholar.google.com/citations?user=apFJnpMAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
+        <a href="https://twitter.com/bushrashahid_" target="_blank">Twitter</a><br>
+        <a href="mailto:bushra.shahid@gmail.com">Email</a>
+      </div>
+    </div>
   <!-- RIGHT COLUMN -->
   <div class="intro-right">
     <p>
